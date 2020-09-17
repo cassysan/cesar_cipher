@@ -14,12 +14,12 @@ def ceasar_cipher(string, offset)
           cipher_string += downcase_alpha[(downcase_alpha.index(letter) + offset) % 26]
       end
   end
-    puts cipher_string
+    cipher_string
 end
 
-  ceasar_cipher('What a string!', 5)
-  ceasar_cipher('Where are you now that I need you', 2)
-  ceasar_cipher("Dtz'qq sjajw xytu rj stb!!!!", -5)
+  puts ceasar_cipher('What a string!', 5)
+  puts ceasar_cipher('Where are you now that I need you', 2)
+  puts ceasar_cipher("Dtz'qq sjajw xytu rj stb!!!!", -5)
 
 #change string to array
 #find index of character (make sure to loop back around z-a)
